@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "bhanu:: hi sanjay ,how areyou?"
+echo "sanjay:: hello son. i am good then what about you?"
+echo "bhanu:: i am good mom . what  is your going on?"
+echo "sanjay:: i started learning java full stock bhanu"
