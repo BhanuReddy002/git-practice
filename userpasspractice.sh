@@ -4,6 +4,6 @@
 #PASSWORD=123
  
  echo "please enter your username::"
- read username
+ read USERNAME
 
  echo "username entered is: $USERNAME"
