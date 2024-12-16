@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # index starts from 0 ,size is 3
-FRUITS=("apple","mango","orange") #array
+FRUITS=("APPLE","MANGO","ORANGE") #array
 
 # echo "First fruit is: ${FRUITS[0]}"
 echo "Second fruit is: ${FRUITS[1]}"
