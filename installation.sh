@@ -7,7 +7,7 @@ USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
 then 
-    echo "please run this script with priveleges"
+    echo "please run this script with root priveleges"
     exit 1
  f1   
 
