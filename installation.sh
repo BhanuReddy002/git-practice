@@ -3,4 +3,10 @@
 #dnf install git -y
 
 USERID=$(id -u)
-echo "user ID is: $USERID"
+#echo "user ID is: $USERID"
+
+if [ $USERID -ne 0 ]
+then 
+    echo "please run this script with priveleges"
+    exit 1
+ f1   
