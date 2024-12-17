@@ -10,3 +10,5 @@ then
     echo "please run this script with priveleges"
     exit 1
  f1   
+
+ dnf install git -y
