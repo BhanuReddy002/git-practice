@@ -1,8 +1,8 @@
 #!/bin/bash
 
 
-get the number
-check it is greater than 20 or not
+#get the number
+#check it is greater than 20 or not
 
 
 NUMBER=$1
