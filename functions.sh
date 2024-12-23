@@ -5,23 +5,29 @@
 USERID=$(id -u)
 #echo "user ID is: $USERID"
 
-VALIDATE(){
-    if [ $1 -ne 0 ]
-    then
-        echo "commaand is...failed"
-        exit 1
-    else
-        echo "Command is Sucess"
-    fi        
-}
-
-
-
-if [ $USERID -ne 0 ]
+CHECK_ROOT(){
+     if [ $USERID -ne 0 ]
 then 
     echo "please run this script with root priveleges"
     exit 1
- fi   
+ fi     
+}
+
+
+VALIDATE(){
+    if [ $1 -ne 0 ]
+    then
+        echo "$2 is...failed"
+        exit 1
+    else
+        echo "$2 is Sucess"
+    fi        
+}
+
+CHECK_ROOT
+
+
+
 
  #dnf install git -y
 
