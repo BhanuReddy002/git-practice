@@ -45,12 +45,12 @@ CHECK_ROOT
      echo "Git is already installed, nothing to do.."
  fi 
 
- dnf list installed mysql
+ dnf list installed mysqlss
  if [ $? -ne 0 ]
  then
      echo "Mysql is not installed.. going  to install"
      dnf install mysql -y
-     VALIDATE $? "Installing MySQL"
+     VALIDATE $? "Installing MySQLsss"
 else
     echo "Mysql is already installed..nothing to do"
 fi                 
