@@ -18,18 +18,19 @@ then
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
-        echo "$2 is...$R failed $N"
+        echo "$2 is...$R FAILED $N"
         exit 1
     else
-        echo "$2 is... $G Sucess $N"
+        echo "$2 is... $G SUCCESS $N"
     fi        
 }
 
 CHECK_ROOT
 
 #sh lops2.sh git mysql postfix ngnix
-for package in $@  $@ refers to all arguments passed to it
+for package in $@    # $@ refers to all arguments passed to it
 do 
   echo $package
 done  
 
+ 
