@@ -34,6 +34,7 @@ VALIDATE(){
 
 USAGE(){
     echo -e "$R USAGE:: $N sudo sh redirectors.sh package1 package2 ..."
+    exit1
 }
 
 CHECK_ROOT
