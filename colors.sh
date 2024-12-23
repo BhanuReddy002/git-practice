@@ -21,10 +21,10 @@ then
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
-        echo "$2 is...failed"
+        echo "$2 is...$R failed $N"
         exit 1
     else
-        echo "$2 is Sucess"
+        echo "$2 is... $G Sucess $N"
     fi        
 }
 
@@ -45,12 +45,12 @@ CHECK_ROOT
      echo "Git is already installed, nothing to do.."
  fi 
 
- dnf list installed mysqlss
+ dnf list installed mysqlSS
  if [ $? -ne 0 ]
  then
      echo "Mysql is not installed.. going  to install"
      dnf install mysql -y
-     VALIDATE $? "Installing MySQLsss"
+     VALIDATE $? "Installing MySQLSS"
 else
     echo "Mysql is already installed..nothing to do"
 fi                 
