@@ -34,7 +34,7 @@ do
    dnf list installed $package
    if [ $? -ne 0]
    then 
-       echo "package is not installed, going to install it.."
+       echo "$package is not installed, going to install it.."
        dnf install $package -y
        VALIDATE $? "Insatlling $package"
     else   
