@@ -16,7 +16,7 @@ Y="\e[33m"
 CHECK_ROOT(){
      if [ $USERID -ne 0 ]
 then 
-    echo -e "$R please run this script with root priveleges $N" &>>$LOG_FILE 
+    echo -e "$R please run this script with root priveleges $N" | tee -a &>>$LOG_FILE
     exit 1
  fi     
 }
@@ -37,7 +37,7 @@ USAGE(){
     exit 1
 } 
 
-echo "Script started executing at: $(date)" &>>$LOG_FILE 
+echo "Script started executing at: $(date)" &>>$LOG_FILE   
 
 CHECK_ROOT
 
